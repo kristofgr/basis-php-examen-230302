@@ -6,6 +6,5 @@ function getMovies() {
   $stmt = $pdo->prepare($sql);
   $stmt->execute();
   $result = $stmt->fetchAll(PDO::FETCH_OBJ);
-  $pdo = null;
   return $result;
 };
